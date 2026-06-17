@@ -71,6 +71,17 @@
     .pill-shadow {
       box-shadow: 0 10px 40px -10px rgba(0,0,0,0.15), 0 0 10px rgba(0,0,0,0.05);
     }
+
+    /* Nav bar gains a soft glass background on hover */
+    .site-nav {
+      transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .site-nav:hover {
+      background-color: rgba(15, 23, 42, 0.45);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body class="bg-slate-50 pb-28 md:pb-0 relative">
@@ -81,12 +92,12 @@
       alt="Rare Grade Tech Repair Dashboard Hero Banner">
   </div>
 
-  <nav class="absolute top-0 left-0 w-full z-40 bg-transparent">
+  <nav class="site-nav absolute top-0 left-0 w-full z-40 bg-transparent">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between py-4 md:py-6"> 
         
-        <div class="flex items-center bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-2xl">
-          <img src="2.png" alt="Rare Grade Tech Logo" class="h-10 md:h-14 w-auto object-contain">
+        <div class="flex items-center">
+          <img src="https://i.postimg.cc/zXRtPzMT/2.png" alt="Rare Grade Tech Logo" class="h-10 md:h-14 w-auto object-contain">
         </div>
         
         <div class="flex items-center gap-x-6">
