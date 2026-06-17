@@ -70,19 +70,13 @@
 </head>
 <body class="bg-slate-50 pb-28 md:pb-0">
 
-  <!-- Desktop/Tablet Navbar -->
   <nav class="bg-white border-b border-slate-200 sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center gap-x-3">
-          <div class="w-9 h-9 bg-indigo-600 rounded-xl flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.298c-.203-.827-.5-1.559-1.026-2.085-1.03-1.03-2.61-1.085-3.69-.136L12.56 5.25a4.5 4.5 0 00-6.19 6.279c.961 1.092 2.553 1.134 3.585.103a3.001 3.001 0 011.693-.72z"></path></svg>
-          </div>
-          <span class="font-display text-2xl font-bold text-slate-900 tracking-tight">Rare Grade Tech</span>
+      <div class="flex items-center justify-between py-3 md:py-4"> <div class="flex items-center">
+          <img src="2.png" alt="Rare Grade Tech Logo" class="h-14 md:h-20 w-auto object-contain">
         </div>
         
         <div class="flex items-center gap-x-6">
-          <!-- Desktop Nav Links -->
           <div class="hidden md:flex items-center gap-x-8 text-sm">
             <a href="#" class="text-slate-600 hover:text-slate-900 font-medium">Track Repair</a>
             <a href="#" class="text-slate-600 hover:text-slate-900 font-medium">My Devices</a>
@@ -104,7 +98,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Floating Pill Bottom Navigation -->
   <div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[400px] bg-white/95 backdrop-blur-md border border-slate-200/60 z-50 px-2 py-2 flex justify-between items-center rounded-full pill-shadow">
     <a href="#" class="flex flex-col items-center justify-center text-indigo-600 flex-1 py-1.5 transition-transform active:scale-95">
       <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>
@@ -126,9 +119,7 @@
     </a>
   </div>
 
-  <!-- Full-width Hero Banner -->
   <div class="hero-banner">
-    <!-- Updated with direct CDN reference from postimg anchor link -->
     <img 
       src="https://i.postimg.cc/xXV9S6Qt/Gemini-Generated-Image-n7sdbhn7sdbhn7sd.png" 
       alt="Rare Grade Tech Repair Dashboard Hero Banner">
@@ -136,7 +127,6 @@
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 pb-12 -mt-8 sm:-mt-12 md:-mt-24 relative">
     
-    <!-- Hero Content -->
     <div class="max-w-2xl mb-8 sm:mb-10 text-white sm:text-slate-900">
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
         Track your<br class="hidden sm:block"> device repair
@@ -146,7 +136,6 @@
         Enter your tracking ID to view real-time progress on your device diagnostics and repairs.
       </p>
 
-      <!-- Tracking Form -->
       <div class="mt-6">
         <div class="bg-white rounded-[20px] shadow-lg sm:shadow-sm border border-slate-200 p-2">
           <div class="flex flex-col sm:flex-row gap-2">
@@ -172,11 +161,9 @@
       </div>
     </div>
 
-    <!-- Results Section -->
     <div id="results-section" class="hidden">
       <div class="bg-white rounded-[24px] shadow-sm border border-slate-200 overflow-hidden">
         
-        <!-- Header -->
         <div class="px-5 sm:px-8 pt-6 sm:pt-8 pb-5 sm:pb-6 border-b border-slate-100">
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div>
@@ -198,7 +185,6 @@
           </div>
         </div>
 
-        <!-- Key Info -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-5 sm:px-8 py-6 bg-slate-50/50">
           <div>
             <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3">Assigned Technician</div>
@@ -233,7 +219,6 @@
           </div>
         </div>
 
-        <!-- Timeline -->
         <div class="px-5 sm:px-8 py-6 sm:py-8">
           <div class="flex items-center justify-between mb-6">
             <h3 class="font-bold text-lg text-slate-900">Repair History</h3>
@@ -245,11 +230,9 @@
           </div>
 
           <div id="timeline" class="space-y-6 relative ml-2">
-            <!-- Timeline items injected via JS -->
-          </div>
+            </div>
         </div>
 
-        <!-- Actions -->
         <div class="px-5 sm:px-8 py-5 border-t border-slate-100 bg-slate-50 flex flex-col sm:flex-row gap-3">
           <button onclick="contactSupport()" 
                   class="flex-1 px-5 py-3 text-sm font-semibold bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 rounded-xl transition-all shadow-sm flex items-center justify-center gap-x-2 text-slate-700">
@@ -268,7 +251,6 @@
   </div>
 
   <script>
-    // Sample data focused on Device Repairs
     const tickets = {
       "RG-REP-014": {
         id: "RG-REP-014",
